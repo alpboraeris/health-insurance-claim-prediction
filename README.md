@@ -3,8 +3,6 @@
 This project predicts individual health insurance payments using machine learning in Python.  
 It takes you from data exploration and preprocessing to model training and deployment through an interactive Streamlit app.
 
----
-
 ## 📘 Overview
 
 Health insurance costs vary based on personal and medical factors such as age, BMI, blood pressure, smoking habits, and health conditions.  
@@ -14,8 +12,6 @@ This project builds a regression model to estimate those costs, demonstrating a 
 - Feature encoding and scaling  
 - Model training, evaluation and optimization  
 - Real-time prediction through a Streamlit web interface  
-
----
 
 ## 🧩 Project Structure
 ├── insurance_claim_prediction.ipynb # Main notebook with data exploration and model training
@@ -28,8 +24,7 @@ This project builds a regression model to estimate those costs, demonstrating a 
 ├── requirements.txt # Project dependencies
 └── README.md
 
----
-# ⚙️ Key Steps
+## ⚙️ Key Steps
 
 ### 1. Data Cleaning & Exploration
 - Handled missing and inconsistent values  
@@ -37,7 +32,7 @@ This project builds a regression model to estimate those costs, demonstrating a 
 - Normalized numerical features (`age`, `bmi`, `bloodpressure`, `children`) using `StandardScaler`
 
 ### 2. Model Training & Evaluation
-- Built multiple regression models (Linear Regression, Random Forest, etc.)  
+- Built multiple regression models (Linear Regression, Random Forest, Polynomial Regression, SVR, XGBoost)  
 - Compared models using R² and RMSE metrics  
 - Saved the best-performing model as `best_model.pkl`  
 
