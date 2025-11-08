@@ -14,15 +14,17 @@ This project builds a regression model to estimate those costs, demonstrating a 
 - Real-time prediction through a Streamlit web interface  
 
 ## 🧩 Project Structure
-├── insurance_claim_prediction.ipynb # Main notebook with data exploration and model training
-├── app.py # Streamlit web app for prediction
-├── best_model.pkl # Trained ML model
-├── scaler.pkl # Feature scaler
-├── label_encoder_gender.pkl # Encoded mapping for gender
-├── label_encoder_diabetic.pkl # Encoded mapping for diabetic status
-├── label_encoder_smoker.pkl # Encoded mapping for smoker status
-├── requirements.txt # Project dependencies
+```
+├── insurance_claim_prediction.ipynb   # Main notebook with data exploration and model training
+├── app.py                             # Streamlit web app for prediction
+├── best_model.pkl                     # Trained ML model
+├── scaler.pkl                         # Feature scaler
+├── label_encoder_gender.pkl           # Encoded mapping for gender
+├── label_encoder_diabetic.pkl         # Encoded mapping for diabetic status
+├── label_encoder_smoker.pkl           # Encoded mapping for smoker status
+├── requirements.txt                   # Project dependencies
 └── README.md
+```
 
 ## ⚙️ Key Steps
 
@@ -43,7 +45,7 @@ This project builds a regression model to estimate those costs, demonstrating a 
 
 ---
 
-## 🚀 How to Run the Project
+## 🛠 How to Run the Project
 
 ### 1. Clone the Repository
 ```bash
