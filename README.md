@@ -1,4 +1,4 @@
-# 💶 🩺Health Insurance Claim Prediction
+# 🩺💶 Health Insurance Claim Prediction
 
 A machine learning project that predicts individual health insurance claim amounts using Python.
 It walks through a complete data science workflow, covering exploratory data analysis, feature engineering, model selection and deployment with Streamlit.
