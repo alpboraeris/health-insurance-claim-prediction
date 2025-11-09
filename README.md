@@ -1,11 +1,11 @@
-# 🩺💶 Health Insurance Payment Prediction
+# 🩺💶 Health Insurance Claim Prediction
 
-A machine learning project that predicts individual health insurance payments using Python.
+A machine learning project that predicts individual health insurance claim amounts using Python.
 It walks through a complete data science workflow, covering exploratory data analysis, feature engineering, model selection and deployment with Streamlit.
 
 ## 📘 Overview
 
-Health insurance costs depend on a range of personal and medical factors such as age, BMI, blood pressure, smoking habits and chronic conditions.
+Health insurance claims depend on a range of personal and medical factors such as age, BMI, blood pressure, smoking habits and chronic conditions.
 This project builds and deploys a regression model that estimates those costs accurately, showing the full pipeline from raw data to an interactive web app.
 
 - Data cleaning and exploration  
@@ -31,7 +31,7 @@ Before modeling, the dataset was analyzed to identify key patterns and correlati
 
 - **Distribution Analysis:** Checked the spread of numerical variables (`age`, `bmi`, `bloodpressure`, `children`, `claim`)  
 - **Categorical Insights:** Visualized the impact of `gender`, `smoker`, and `diabetic` on claim amounts  
-- **Correlation Heatmap:** Revealed strong relationships between **bloodpressure**, **BMI** and insurance cost  
+- **Correlation Heatmap:** Revealed strong relationships between **bloodpressure**, **BMI** and insurance claim  
 - **Behavioral Patterns:** Found that smokers consistently have higher average claims across all demographics  
 
 These insights guided feature selection and model choice later in the workflow.  
@@ -58,7 +58,7 @@ Trained and compared multiple regression models:
 ### 3. Streamlit Deployment  
 - Developed a web app (`app.py`) for real-time predictions  
 - Accepts user inputs for personal and health-related attributes  
-- Applies the same preprocessing pipeline and displays predicted insurance payment in real time    
+- Applies the same preprocessing pipeline and displays predicted insurance claim amount in real time    
 
 
 
@@ -66,8 +66,8 @@ Trained and compared multiple regression models:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/health-insurance-payment-prediction.git
-cd health-insurance-payment-prediction
+git clone https://github.com/yourusername/health-insurance-claim-prediction.git
+cd health-insurance-claim-prediction
 ```
 ### 2. Install Dependencies
 ```bash
