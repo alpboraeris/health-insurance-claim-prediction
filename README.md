@@ -61,7 +61,6 @@ Trained and compared multiple regression models:
 - Applies the same preprocessing pipeline and displays predicted insurance payment in real time    
 
 
----
 
 ## 🛠 How to Run the Project
 
