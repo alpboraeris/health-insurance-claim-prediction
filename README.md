@@ -1,47 +1,65 @@
 # 🩺 Health Insurance Payment Prediction
 
-This project predicts individual health insurance payments using machine learning in Python.  
-It takes you from data exploration and preprocessing to model training and deployment through an interactive Streamlit app.
+A machine learning project that predicts individual health insurance payments using Python.
+It walks through a complete data science workflow, covering exploratory data analysis, feature engineering, model selection and deployment with Streamlit.
 
 ## 📘 Overview
 
-Health insurance costs vary based on personal and medical factors such as age, BMI, blood pressure, smoking habits, and health conditions.  
-This project builds a regression model to estimate those costs, demonstrating a full end-to-end data science workflow:
+Health insurance costs depend on a range of personal and medical factors such as age, BMI, blood pressure, smoking habits and chronic conditions.
+This project builds and deploys a regression model that estimates those costs accurately, showing the full pipeline from raw data to an interactive web app.
 
 - Data cleaning and exploration  
 - Feature encoding and scaling  
-- Model training, evaluation and optimization  
+- Model training, tuning, and evaluation 
 - Real-time prediction through a Streamlit web interface  
 
 ## 🧩 Project Structure
 ```
-├── insurance_claim_prediction.ipynb   # Main notebook with data exploration and model training
-├── app.py                             # Streamlit web app for prediction
-├── best_model.pkl                     # Trained ML model
-├── scaler.pkl                         # Feature scaler
-├── label_encoder_gender.pkl           # Encoded mapping for gender
-├── label_encoder_diabetic.pkl         # Encoded mapping for diabetic status
-├── label_encoder_smoker.pkl           # Encoded mapping for smoker status
+├── insurance_claim_prediction.ipynb   # EDA, model training and evaluation
+├── app.py                             # Streamlit web app
+├── best_model.pkl                     # Trained XGBoost model
+├── scaler.pkl                         # StandardScaler for numeric features
+├── label_encoder_*.pkl                # LabelEncoders for categorical variables
 ├── requirements.txt                   # Project dependencies
 └── README.md
 ```
+<img width="839" height="735" alt="image" src="https://github.com/user-attachments/assets/cfaac0d4-0af1-4c57-848f-6d1584ab3ddd" />
 
-## ⚙️ Key Steps
+## 🔍 Exploratory Data Analysis (EDA)
 
-### 1. Data Cleaning & Exploration
+Before modeling, the dataset was analyzed to identify key patterns and correlations:
+
+- **Distribution Analysis:** Checked the spread of numerical variables (`age`, `bmi`, `bloodpressure`, `children`, `claim`)  
+- **Categorical Insights:** Visualized the impact of `gender`, `smoker`, and `diabetic` on claim amounts  
+- **Correlation Heatmap:** Revealed strong relationships between **bloodpressure**, **BMI** and insurance cost  
+- **Behavioral Patterns:** Found that smokers consistently have higher average claims across all demographics  
+
+These insights guided feature selection and model choice later in the workflow.  
+
+## ⚙️ Model Development  
+
+### 1. Data Preprocessing  
 - Handled missing and inconsistent values  
-- Encoded categorical features (`gender`, `diabetic`, `smoker`) using `LabelEncoder`  
-- Normalized numerical features (`age`, `bmi`, `bloodpressure`, `children`) using `StandardScaler`
+- Encoded categorical columns (`gender`, `diabetic`, `smoker`) with `LabelEncoder`  
+- Normalized numerical features with `StandardScaler`  
 
-### 2. Model Training & Evaluation
-- Built multiple regression models (Linear Regression, Random Forest, Polynomial Regression, SVR, XGBoost)  
-- Compared models using R² and RMSE metrics  
-- Saved the best-performing model as `best_model.pkl`  
+### 2. Model Training & Evaluation  
+Trained and compared multiple regression models:  
+- Linear Regression  
+- Polynomial Regression  
+- Random Forest Regressor  
+- Support Vector Regressor (SVR)  
+- XGBoost Regressor  
 
-### 3. Deployment with Streamlit
-- Created a user-friendly interface to input personal details  
-- Loaded the trained model and encoders for consistent preprocessing  
-- Displayed predicted insurance payment amounts in real time  
+**Evaluation metrics:** R², RMSE, MAE  
+
+**XGBoost** achieved the highest R² and lowest RMSE, and was saved as `best_model.pkl` for deployment.  
+
+### 3. Streamlit Deployment  
+- Developed a web app (`app.py`) for real-time predictions  
+- Accepts user inputs for personal and health-related attributes  
+- Applies the same preprocessing pipeline and displays predicted insurance payment in real time    
+
 
 ---
 
