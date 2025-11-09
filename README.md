@@ -23,7 +23,8 @@ This project builds and deploys a regression model that estimates those costs ac
 ├── requirements.txt                   # Project dependencies
 └── README.md
 ```
-<img width="839" height="735" alt="image" src="https://github.com/user-attachments/assets/cfaac0d4-0af1-4c57-848f-6d1584ab3ddd" />
+<img width="829" height="741" alt="image" src="https://github.com/user-attachments/assets/674e62b4-53d7-47ea-947f-0242d964824c" />
+
 
 ## 🔍 Exploratory Data Analysis (EDA)
 
