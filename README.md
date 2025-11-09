@@ -32,8 +32,8 @@ Before modeling, the dataset was analyzed to identify key patterns and correlati
 
 - **Distribution Analysis:** Checked the spread of numerical variables (`age`, `bmi`, `bloodpressure`, `children`, `claim`)  
 - **Categorical Insights:** Visualized the impact of `gender`, `smoker`, and `diabetic` on claim amounts  
-- **Correlation Heatmap:** Revealed strong relationships between **bloodpressure**, **BMI** and insurance claim  
-- **Behavioral Patterns:** Found that smokers consistently have higher average claims across all demographics  
+- **Correlation Heatmap:** Revealed strong relationships between `bloodpressure`, `BMI` and `insurance claim `
+- **Behavioral Patterns:** Found that **smokers** consistently have higher average claims across all demographics  
 
 These insights guided feature selection and model choice later in the workflow.  
 
@@ -67,7 +67,7 @@ Trained and compared multiple regression models:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/health-insurance-claim-prediction.git
+git clone https://github.com/alpboraeris/health-insurance-claim-prediction.git
 cd health-insurance-claim-prediction
 ```
 ### 2. Install Dependencies
