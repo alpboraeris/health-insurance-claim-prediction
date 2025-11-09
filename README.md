@@ -26,7 +26,7 @@ This project builds and deploys a regression model that estimates those costs ac
 <img width="829" height="741" alt="image" src="https://github.com/user-attachments/assets/674e62b4-53d7-47ea-947f-0242d964824c" />
 
 
-## 🔍 Exploratory Data Analysis (EDA)
+## 📊🔍 Exploratory Data Analysis (EDA)
 
 Before modeling, the dataset was analyzed to identify key patterns and correlations:
 
