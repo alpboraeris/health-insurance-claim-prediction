@@ -1,4 +1,4 @@
-# 🩺 Health Insurance Payment Prediction
+# 🩺💶 Health Insurance Payment Prediction
 
 A machine learning project that predicts individual health insurance payments using Python.
 It walks through a complete data science workflow, covering exploratory data analysis, feature engineering, model selection and deployment with Streamlit.
@@ -13,7 +13,7 @@ This project builds and deploys a regression model that estimates those costs ac
 - Model training, tuning, and evaluation 
 - Real-time prediction through a Streamlit web interface  
 
-## 🧩 Project Structure
+## 🗂️ Project Structure
 ```
 ├── insurance_claim_prediction.ipynb   # EDA, model training and evaluation
 ├── app.py                             # Streamlit web app
