@@ -62,6 +62,8 @@ Trained and compared multiple regression models:
 - Applies the same preprocessing pipeline and displays predicted insurance claim amount in real time    
 
 
+## [💾Dataset](https://www.kaggle.com/datasets/thedevastator/insurance-claim-analysis-demographic-and-health)
+
 
 ## 🛠 How to Run the Project
 
